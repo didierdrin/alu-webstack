@@ -21,7 +21,7 @@ researcher() {
 
 # Check that the domain argument is provided
 if [[ $# -eq 1 ]] && [[ "$1" =~ \.tech$|\.online$ ]]; then
-    for sub_domain in "www" "lb-01" "web-01" "web-02"; do
+    for sub_domain in "www" "54.146.221.88" "54.226.64.139" "98.80.7.6"; do
 	    researcher "$1" "$sub_domain" "A"
     done
 elif [[ $# -eq 2 ]]; then
