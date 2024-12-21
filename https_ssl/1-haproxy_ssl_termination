@@ -34,12 +34,12 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 frontend clickviral-tech-frontend
-        bind *:443 ssl crt /etc/ssl/private/www.bonasolutions.tech.pem
+        bind *:443 ssl crt /etc/ssl/private/www.akiliai.tech.pem
         mode http
         reqadd X-Forwarded-Proto:\ https
         default_backend clickviral-tech-backend
 
 backend clickviral-tech-backend
         balance roundrobin
-        server 6269-web-01 34.228.159.176:80 check
-        server 6269-web-02 18.234.150.129:80 check
+        server 6286-web-01 54.226.64.139:80 check
+        server 6286-web-02 98.80.7.6:80 check
